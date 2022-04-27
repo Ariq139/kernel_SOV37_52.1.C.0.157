@@ -18,7 +18,7 @@ int get_security_status(int *status);
 #else
 static inline int get_security_status(int *status)
 {
-	return -ENOTSUP;
+	return -ENOSYS;
 }
 #endif /* CONFIG_SECURITY_STATUS */
 #endif /* __SECURITY_STATUS_H */
